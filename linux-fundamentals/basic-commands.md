@@ -54,6 +54,30 @@ A beginner-friendly reference sheet of essential Linux commands with description
 |---------|-------------|----------------|
 | `grep "password" file.txt` | Show lines that contain the word "password" in `file.txt` | `3: admin password is 1234` |
 
+
+---
+
+## ⚙️ Operators in Linux (Shell Operators)
+
+These operators help us control how commands run and where their output goes.
+
+| Operator | Description | Example | What It Does |
+|----------|-------------|---------|--------------|
+| `&` | Runs a command in the background | `ping google.com &` | Runs ping while letting you keep using the terminal |
+| `&&` | Combines commands – runs second only if the first succeeds | `mkdir test && cd test` | Creates a folder and moves into it if creation worked |
+| `>` | Redirects output (overwrite) | `echo "Hello" > file.txt` | Creates/overwrites `file.txt` with "Hello" |
+| `>>` | Redirects output (append) | `echo "More" >> file.txt` | Adds "More" to the end of `file.txt` |
+
+---
+
+🧠 Notes:
+- `&` is helpful for long-running commands like scans or pings
+- `&&` is great in scripts or chaining multiple setup commands
+- `>` vs `>>`:  
+  `>` replaces content  
+  `>>` adds content
+
+
 🧠 **Use when you're looking for a word inside a text file**
 
 ---
