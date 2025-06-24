@@ -1,3 +1,4 @@
+
 # 🪟 Windows Fundamentals – Part 1
 
 ---
@@ -139,3 +140,65 @@ It helps the **operating system, scripts, or programs** know important locations
 
 ⚠️ **Caution**:
 - Accidentally modifying or deleting files in `System32` can render Windows **unusable**
+
+---
+
+## 👤 User Account Types in Windows
+
+Windows systems support two main types of local user accounts:
+
+| Account Type     | Permissions & Capabilities                                      |
+|------------------|---------------------------------------------------------------|
+| Administrator     | Full system access. Can install programs, create/delete users, change system settings. |
+| Standard User     | Limited to modifying their own files. Cannot install apps or change system-level settings. |
+
+🧠 **To check or change account type:**
+1. Open **Settings > Accounts > Other users**
+2. Select a user → Click **Change account type**
+3. Choose between `Standard User` or `Administrator`
+
+📌 Standard Users **cannot** see the "Add someone else to this PC" option.
+
+---
+
+## 🗂️ User Profile Folders
+
+- When a new user logs into Windows for the first time, Windows automatically creates a **user profile**.
+- Default path:  
+C:\Users<username>
+
+
+Each user profile contains standard folders:
+- `Desktop`
+- `Documents`
+- `Downloads`
+- `Music`
+- `Pictures`
+
+🔁 The **User Profile Service** runs on first login to create this profile.
+
+---
+
+## 🧰 Local Users and Groups Management
+
+You can manage users and groups using the `lusrmgr.msc` tool.
+
+📌 To open:
+1. Press `Win + R` → Type `lusrmgr.msc`
+
+You will see two folders:
+- **Users** – lists all local users
+- **Groups** – lists predefined local groups (like Administrators, Users, Guests, etc.)
+
+👥 Users can be added to one or more groups to inherit group-level permissions.
+
+---
+
+## 🔍 How to View Existing Users
+
+1. Click the **Start Menu**
+2. Search for **Other User** → Open **System Settings > Other users**
+3. From there, you can view and manage all existing accounts
+
+
+
