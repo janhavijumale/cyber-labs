@@ -41,6 +41,9 @@
   - Read
   - Write
 
+  ![image](https://github.com/user-attachments/assets/e221551f-1986-43d9-998d-ec4a5e482565)
+
+
 📍 **To view permissions**:
 1. Right-click file/folder → Properties
 2. Go to **Security tab**
