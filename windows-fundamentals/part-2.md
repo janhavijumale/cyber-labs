@@ -308,3 +308,52 @@ net help localgroup
 |-----------------|----------------------------------------|
 | `<command> /?`  | Shows help manual for most commands    |
 | `net help`      | Used specifically for the `net` command
+
+---
+
+## 🧩 Windows Registry
+
+---
+
+### 📘 What is the Windows Registry?
+
+The **Windows Registry** (per Microsoft) is a **central hierarchical database** used to store information necessary to configure the system for one or more:
+
+- Users
+- Applications
+- Hardware devices
+
+Windows continually references this database during operation to manage settings and configurations.
+
+---
+
+### 🗂️ What does the Registry store?
+
+| Type of Information                                |
+|----------------------------------------------------|
+| Profiles for each user                             |
+| Applications installed and their file associations |
+| Folder and icon property settings                  |
+| Hardware configuration and details                 |
+| Ports being used by the system                     |
+
+---
+
+### ⚠️ Warning
+
+> The Registry is for **advanced users only**.  
+> Improper edits can cause system instability or failure.
+
+---
+
+### 🛠️ How to Access
+
+You can view and edit the Windows Registry using the **Registry Editor**:
+
+- Press `Win + R`
+- Type `regedit`
+- Press Enter
+
+📖 [Official Microsoft Documentation on Registry](https://learn.microsoft.com/en-us/windows/win32/sysinfo/registry)
+
+---
