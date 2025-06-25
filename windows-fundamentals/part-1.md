@@ -200,5 +200,139 @@ You will see two folders:
 2. Search for **Other User** → Open **System Settings > Other users**
 3. From there, you can view and manage all existing accounts
 
+---
+
+## 🛡️ User Account Control (UAC)
+
+### 🔍 Why UAC Was Introduced:
+- Most home users run as **local administrators**, which poses security risks.
+- Malware run under an admin account can make **system-wide changes**.
+- Microsoft introduced **User Account Control (UAC)** in Windows Vista to reduce this risk.
+
+---
+
+### ⚙️ How UAC Works:
+
+| Situation | Behavior |
+|----------|----------|
+| 🧑 Logged in as Admin | OS runs apps without elevated rights by default |
+| 🔐 Admin Action Required | UAC prompts for confirmation |
+| 👤 Logged in as Standard User | UAC prompts for **admin credentials** |
+
+- ✅ This prevents apps from making unauthorized system changes.
+- ❌ UAC does **not apply** to the built-in Administrator account (by default).
+
+---
+
+### 🖼️ UAC in Action:
+
+- When installing a program, if UAC elevation is needed:
+  - A **shield icon** appears on the program’s icon.
+  - A **UAC dialog box** appears asking for permission (or admin credentials if you’re a standard user).
+  
+---
+
+---
+
+## ⚙️ Settings vs Control Panel in Windows
+
+On a Windows system, the two primary locations to configure system settings are:
+
+| Menu           | Description                                                                 |
+|----------------|-----------------------------------------------------------------------------|
+| **Control Panel** | Classic interface used for advanced and legacy system settings              |
+| **Settings**       | Modern interface introduced in Windows 8, now the default for most user-level tasks |
+
+---
+
+### 🖥️ Evolution of System Configuration:
+- **Control Panel** has long been the go-to location for:
+  - Adding/removing hardware (e.g., printers)
+  - Uninstalling programs
+  - Accessing advanced settings
+- **Settings Menu** was introduced with **Windows 8**, designed with touch interfaces in mind.
+  - More **user-friendly** and **streamlined**
+  - Now the **default** interface for many configurations in Windows 10 and 11
+
+---
+
+### 🔄 How They Work Together:
+- Some tasks start in **Settings** and redirect to the **Control Panel**
+- 🧭 Example:  
+  1. Open **Settings** → Network & Internet  
+  2. Click on **Change adapter options**  
+  3. This opens the **Control Panel's** Network Connections window
+
+---
+
+### 🔍 Best Practice: Search for Settings
+If unsure where a setting is located:
+- Use the **Start Menu** search (e.g., search for “wallpaper”)
+- Windows will show results from **both** Settings and Control Panel
+- Clicking the **best match** opens the correct menu directly
+
+---
+
+✅ Summary:
+- Use **Settings** for day-to-day configurations
+- Use **Control Panel** for **advanced** or **legacy** options
+
+---
+
+## 🧰 Task Manager in Windows
+
+The **Task Manager** provides detailed information about the applications and processes running on a system.
+
+### 🧭 How to Access:
+- Right-click the taskbar → Select **Task Manager**
+- Shortcut: `Ctrl + Shift + Esc`
+
+---
+
+### 🪟 First View (Simple Mode):
+Shows only currently open applications (not background processes). You can:
+- 🟥 **End Task**: Force-close unresponsive apps
+- 🧠 Useful if the app is frozen and won't close normally
+
+---
+
+### 📜 Right-Click Options on an App:
+
+| Option             | Description |
+|--------------------|-------------|
+| 🔁 **Switch To**         | Brings the selected app window to focus |
+| ❌ **End Task**          | Terminates the selected process |
+| ➕ **Run New Task**      | Open a new program or file (like a mini Run window) |
+| 📌 **Always On Top**     | Keeps Task Manager above all windows |
+| 📂 **Open File Location**| Opens the location of the app’s `.exe` file |
+| 🔍 **Search Online**     | Bing search for the program name — useful to identify unknown apps |
+| ⚙️ **Properties**         | Opens file properties to view version, compatibility settings, etc. |
+
+---
+
+### 📊 Task Manager in System Tray
+- Displays CPU usage as an icon
+- Hover to see quick stats (CPU, RAM, Disk, Network)
+- Enable: `Options > Hide When Minimized` to keep it in system tray without showing on taskbar
+
+---
+
+### 🧩 Tabs in Full View
+
+| Tab             | Description |
+|------------------|-------------|
+| **Processes**     | Lists running apps & background processes |
+| **Performance**   | Real-time graphs for CPU, Memory, Disk, Network |
+| **App History**   | Resource usage per app (for Store apps) |
+| **Startup**       | Manage apps that auto-start with Windows |
+| **Users**         | View active user sessions and their resource usage |
+| **Details**       | Advanced view of all running processes |
+| **Services**      | Start/Stop system services |
+
+---
+
+✅ Summary:
+Task Manager is an essential tool for monitoring system performance, troubleshooting, and managing running applications.
+
 
 
